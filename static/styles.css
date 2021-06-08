@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+    margin: 0;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #e3e3cf;
+}
+
+div{
+    margin-bottom: 55px;
+}
+
+input[type=text], select {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 5%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  #bottom {
+    position: absolute;
+    bottom: 15px;
+    right:50px;
+  }
+
+  #image{
+      position: absolute;
+      right: 50px;
+      top: 175px;
+  }

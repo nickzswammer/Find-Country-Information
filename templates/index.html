@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='../static/styles.css'>
+    
+    <title>Search - Countries</title>
+</head>
+
+<body>
+
+    <header>
+        <a href='/'><img style='float:left; padding-right: 25px;'width='60' height='31.6' src='https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png'></a>
+        
+        <h1 >Basic Country Information Searcher</h1>
+    </header>
+    <br>
+    <div class='search'>
+        <form action='/' method='POST'>
+            <input type='text' id='query' name='query' placeholder="Enter Country Name">
+            <input type="submit" value="Search">
+
+        </form>
+    </div>
+    
+
+    <div class='results'>
+        <h2>{{searchresults}}</h2>
+        {% for result in results %}
+        <div>
+            <ul>
+                <p><b>{{result['name']}}</b></p>
+                <li>Region: {{result['region']}}</li>
+                <li>Capital: {{result['capital']}}</li>
+                <li>Population: {{result['population']}}</li>
+                <li>Currency: {{result['currencies'][0]['symbol']}} {{result['currencies'][0]['name']}}</li>
+            </ul>   
+        </div>
+
+        {% endfor %}
+    </div>
+    <p id='image'><img width=960 height=540 src='https://wallpapercave.com/wp/wp3846205.jpg'></p>
+    <p id='bottom'>Made by Nicholas Zhang. <a style='text-decoration: none;'target="_blank" href='https://github.com/nickzswammer'>Github Here</a></p>
+
+</body>
+
+</html>
