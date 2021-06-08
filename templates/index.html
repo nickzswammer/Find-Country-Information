@@ -7,17 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='../static/styles.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon-16x16.png">
+    <link rel="manifest" href="../static/site.webmanifest">
+    <link rel="mask-icon" href="../static/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta  name='author' content='Nicholas Zhang'>
+    <meta  name='description' content='Find country information using a search bar to find all closest results.'>
 
-    
     <title>Search - Countries</title>
 </head>
 
 <body>
 
     <header>
-        <a href='/'><img style='float:left; padding-right: 25px;'width='60' height='31.6' src='https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png'></a>
-        
-        <h1 >Basic Country Information Searcher</h1>
+        <a href='/'><img style='float:left; padding-right: 25px;' width='60' height='31.6'
+                src='https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png'></a>
+
+        <h1>Basic Country Information Searcher</h1>
     </header>
     <br>
     <div class='search'>
@@ -28,7 +37,7 @@
 
         </form>
     </div>
-    
+
 
     <div class='results'>
         <h2>{{searchresults}}</h2>
@@ -40,13 +49,14 @@
                 <li>Capital: {{result['capital']}}</li>
                 <li>Population: {{result['population']}}</li>
                 <li>Currency: {{result['currencies'][0]['symbol']}} {{result['currencies'][0]['name']}}</li>
-            </ul>   
-        </div>  
+            </ul>
+        </div>
 
         {% endfor %}
     </div>
     <p id='image'><img width=960 height=540 src='https://wallpapercave.com/wp/wp3846205.jpg'></p>
-    <p id='bottom'>Made by Nicholas Zhang. <a style='text-decoration: none;'target="_blank" href='https://github.com/nickzswammer'>Github Here</a></p>
+    <p id='bottom'>Made by Nicholas Zhang. <a style='text-decoration: none;' target="_blank"
+            href='https://github.com/nickzswammer'>Github Here</a></p>
 
 </body>
 
