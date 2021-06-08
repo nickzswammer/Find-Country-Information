@@ -2,7 +2,6 @@ import json
 import requests
 from flask import render_template, Blueprint
 from flask import Flask, redirect, url_for, request
-from dotenv import load_dotenv
 import os
 
 #Create App
