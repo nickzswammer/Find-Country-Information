@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='../static/styles.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     
     <title>Search - Countries</title>
 </head>
@@ -19,9 +21,10 @@
     </header>
     <br>
     <div class='search'>
-        <form action='/' method='POST'>
-            <input type='text' id='query' name='query' placeholder="Enter Country Name">
-            <input type="submit" value="Search">
+        <form action='/' method='POST' class='example'>
+            <input autocomplete="off" type='text' id='query' name='query' placeholder="Enter Country Name">
+            <button type="submit"><i class="fa fa-search"></i></button>
+
 
         </form>
     </div>
@@ -38,7 +41,7 @@
                 <li>Population: {{result['population']}}</li>
                 <li>Currency: {{result['currencies'][0]['symbol']}} {{result['currencies'][0]['name']}}</li>
             </ul>   
-        </div>
+        </div>  
 
         {% endfor %}
     </div>
